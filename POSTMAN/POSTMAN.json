@@ -1,0 +1,137 @@
+{
+  "id": "9b5dfab3-e2cd-4c9c-8678-ad4cc706f777",
+  "name": "BlueDiscosOnline",
+  "description": "",
+  "auth": null,
+  "events": null,
+  "variables": [],
+  "order": [
+    "6ba56eb5-dccd-42fc-91d6-e0e7f3508503",
+    "ce05ed30-1cfc-45ac-b2b1-f3ae4e688948",
+    "cfbeb25e-6e25-4e3a-8e22-3e2cd726562f",
+    "676f8def-d5ff-4a3e-a376-a1d9e66ac5d1",
+    "425c1f0f-64e4-41db-b896-d3e2007145c9"
+  ],
+  "folders_order": [],
+  "folders": [],
+  "requests": [
+    {
+      "id": "425c1f0f-64e4-41db-b896-d3e2007145c9",
+      "name": "https://localhost:44369/api/v1/Venda/GetVendaPaginated",
+      "url": "https://localhost:44369/api/v1/Venda/GetVendaPaginated",
+      "description": "",
+      "data": [],
+      "dataMode": "raw",
+      "headerData": [
+        {
+          "key": "Content-Type",
+          "name": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "type": "text"
+        }
+      ],
+      "method": "GET",
+      "pathVariableData": [],
+      "queryParams": [],
+      "auth": null,
+      "events": null,
+      "folder": null,
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "currentHelper": null,
+      "helperAttributes": null,
+      "collectionId": "9b5dfab3-e2cd-4c9c-8678-ad4cc706f777",
+      "rawModeData": "{\n\t\"DataInicial\" : \"01/02/2019\",\n\t\"DataFinal\": \"02/28/2019\",\n\t\"Skip\" : 1,\n\t\"Take\": 10\n}",
+      "headers": "Content-Type: application/json\n",
+      "pathVariables": []
+    },
+    {
+      "id": "676f8def-d5ff-4a3e-a376-a1d9e66ac5d1",
+      "name": "https://localhost:44369/api/v1/Album/1",
+      "url": "https://localhost:44369/api/v1/Album/1",
+      "description": "",
+      "data": null,
+      "dataMode": null,
+      "headerData": null,
+      "method": "GET",
+      "pathVariableData": [],
+      "queryParams": [],
+      "auth": null,
+      "events": null,
+      "folder": null,
+      "currentHelper": null,
+      "helperAttributes": null,
+      "collectionId": "9b5dfab3-e2cd-4c9c-8678-ad4cc706f777",
+      "pathVariables": []
+    },
+    {
+      "id": "6ba56eb5-dccd-42fc-91d6-e0e7f3508503",
+      "name": "https://localhost:44369/api/v1/Genero/PostGenero",
+      "url": "https://localhost:44369/api/v1/Genero/PostGenero",
+      "description": "",
+      "data": [],
+      "dataMode": "raw",
+      "headerData": [
+        {
+          "key": "Content-Type",
+          "name": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "type": "text"
+        }
+      ],
+      "method": "POST",
+      "pathVariableData": [],
+      "queryParams": [],
+      "auth": null,
+      "events": null,
+      "folder": null,
+      "currentHelper": null,
+      "helperAttributes": null,
+      "collectionId": "9b5dfab3-e2cd-4c9c-8678-ad4cc706f777",
+      "rawModeData": "[\r\n  {\r\n    \"Descricao\": \"pop\",\r\n    \"PercentualDia\": [\r\n      {\r\n        \"DiaSemana\": 0,\r\n        \"Percentual\": 25\r\n      },\r\n      {\r\n        \"DiaSemana\": 1,\r\n        \"Percentual\": 7\r\n      },\r\n      {\r\n        \"DiaSemana\": 2,\r\n        \"Percentual\": 6\r\n      },\r\n      {\r\n        \"DiaSemana\": 3,\r\n        \"Percentual\": 2\r\n      },\r\n      {\r\n        \"DiaSemana\": 4,\r\n        \"Percentual\": 10\r\n      },\r\n      {\r\n        \"DiaSemana\": 5,\r\n        \"Percentual\": 15\r\n      },\r\n      {\r\n        \"DiaSemana\": 6,\r\n        \"Percentual\": 20\r\n      }\r\n    ]\r\n  },\r\n  {\r\n    \"Descricao\": \"mpb\",\r\n    \"PercentualDia\": [\r\n      {\r\n        \"DiaSemana\": 0,\r\n        \"Percentual\": 30\r\n      },\r\n      {\r\n        \"DiaSemana\": 1,\r\n        \"Percentual\": 5\r\n      },\r\n      {\r\n        \"DiaSemana\": 2,\r\n        \"Percentual\": 10\r\n      },\r\n      {\r\n        \"DiaSemana\": 3,\r\n        \"Percentual\": 15\r\n      },\r\n      {\r\n        \"DiaSemana\": 4,\r\n        \"Percentual\": 20\r\n      },\r\n      {\r\n        \"DiaSemana\": 5,\r\n        \"Percentual\": 25\r\n      },\r\n      {\r\n        \"DiaSemana\": 6,\r\n        \"Percentual\": 30\r\n      }\r\n    ]\r\n  },\r\n  {\r\n    \"Descricao\": \"classical\",\r\n    \"PercentualDia\": [\r\n      {\r\n        \"DiaSemana\": 0,\r\n        \"Percentual\": 35\r\n      },\r\n      {\r\n        \"DiaSemana\": 1,\r\n        \"Percentual\": 3\r\n      },\r\n      {\r\n        \"DiaSemana\": 2,\r\n        \"Percentual\": 5\r\n      },\r\n      {\r\n        \"DiaSemana\": 3,\r\n        \"Percentual\": 8\r\n      },\r\n      {\r\n        \"DiaSemana\": 4,\r\n        \"Percentual\": 13\r\n      },\r\n      {\r\n        \"DiaSemana\": 5,\r\n        \"Percentual\": 18\r\n      },\r\n      {\r\n        \"DiaSemana\": 6,\r\n        \"Percentual\": 25\r\n      }\r\n    ]\r\n  },\r\n  {\r\n    \"Descricao\": \"rock\",\r\n    \"PercentualDia\": [\r\n      {\r\n        \"DiaSemana\": 0,\r\n        \"Percentual\": 40\r\n      },\r\n      {\r\n        \"DiaSemana\": 1,\r\n        \"Percentual\": 10\r\n      },\r\n      {\r\n        \"DiaSemana\": 2,\r\n        \"Percentual\": 15\r\n      },\r\n      {\r\n        \"DiaSemana\": 3,\r\n        \"Percentual\": 15\r\n      },\r\n      {\r\n        \"DiaSemana\": 4,\r\n        \"Percentual\": 15\r\n      },\r\n      {\r\n        \"DiaSemana\": 5,\r\n        \"Percentual\": 20\r\n      },\r\n      {\r\n        \"DiaSemana\": 6,\r\n        \"Percentual\": 40\r\n      }\r\n    ]\r\n  }\r\n  \r\n]",
+      "headers": "Content-Type: application/json\n",
+      "pathVariables": []
+    },
+    {
+      "id": "ce05ed30-1cfc-45ac-b2b1-f3ae4e688948",
+      "name": "https://localhost:44369/api/v1/Spotify/GetDataSpotify",
+      "url": "https://localhost:44369/api/v1/Spotify/GetDataSpotify",
+      "description": "",
+      "data": null,
+      "dataMode": null,
+      "headerData": null,
+      "method": "GET",
+      "pathVariableData": [],
+      "queryParams": [],
+      "auth": null,
+      "events": null,
+      "folder": null,
+      "currentHelper": null,
+      "helperAttributes": null,
+      "collectionId": "9b5dfab3-e2cd-4c9c-8678-ad4cc706f777",
+      "pathVariables": []
+    },
+    {
+      "id": "cfbeb25e-6e25-4e3a-8e22-3e2cd726562f",
+      "name": "https://localhost:44369/api/v1/Venda/1",
+      "url": "https://localhost:44369/api/v1/Venda/1",
+      "description": "",
+      "data": null,
+      "dataMode": null,
+      "headerData": null,
+      "method": "GET",
+      "pathVariableData": [],
+      "queryParams": [],
+      "auth": null,
+      "events": null,
+      "folder": null,
+      "currentHelper": null,
+      "helperAttributes": null,
+      "collectionId": "9b5dfab3-e2cd-4c9c-8678-ad4cc706f777",
+      "pathVariables": []
+    }
+  ]
+}
